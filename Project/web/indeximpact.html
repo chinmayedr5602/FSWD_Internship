@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="globalimpact.css" />
+    <link rel="stylesheet" href="styleimpact.css" />
+        <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <style>
+      /* Basic CSS styling for the form */
+      body {
+        font-family: Arial, sans-serif;
+      }
+    
+      .container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+    
+      h2 {
+        text-align: center;
+      }
+    
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+    
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+    
+      textarea {
+        resize: vertical;
+        height: 150px;
+      }
+    
+      input[type="submit"] {
+        background-color: #007BFF;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    
+      input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // Initialize Razorpay with your API key
+      var options = {
+        key: 'rzp_test_hXFPHjdehKVMSg',
+        amount: 10000, // Amount in paise (100 paise = 1 INR)
+        currency: 'INR',
+        name: 'GROWTH FOR TOMORROW',
+        description: 'Payment for Nurturing Today, Empowering Tomorrow',
+        image: "https://imgtr.ee/images/2023/09/17/d4e8082853eccb3b4a83ab638946b635.png", // URL of your logo
+        handler: function (response) {
+          // This function will be called when the payment is successful
+          alert('Payment successful. Payment ID: ' + response.razorpay_payment_id);
+          // You can perform additional actions here, such as updating your database
+        },
+        prefill: {
+          name: 'John Doe', // Customer's name
+          email: 'john@example.com', // Customer's email
+          contact: '1234567890' // Customer's phone number
+        }
+      };
+      function donatefunc() {
+        var rzp = new Razorpay(options);
+        rzp.open();
+      };
+      // Create a Razorpay payment button
+      // var rzpButton = document.getElementById('donate-btn');
+      // rzpButton.onclick = function donatefun() {
+      //   var rzp = new Razorpay(options);
+      //   rzp.open();
+      // };
+    </script>
+    <div class="frame">
+      <div class="div">
+        <div class="overlap">
+          <div class="container">
+            <h2>Contact Us</h2>
+            <form action="http://localhost:3000/crud/postUsers" method="POST">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+          
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+          
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+          
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+          <!-- <div class="overlap-group"><div class="text-wrapper">Name</div></div>
+          <div class="div-wrapper"><div class="text-wrapper-2">Mobile Number</div></div>
+          <div class="text-wrapper-3">Enter Your Name:-</div>
+          <div class="text-wrapper-4">Mobile Number:-</div>
+          <div class="text-wrapper-5">Enter Your Email:-</div>
+          <div class="text-wrapper-6">Message:-</div>
+          <div class="overlap-2"><div class="text-wrapper-7">Enter Your Email</div></div>
+          <div class="rectangle"></div> -->
+        </div>
+        <div class="group-wrapper">
+          <div class="group">
+            <div class="overlap-3">
+              <div class="rectangle-2"></div>
+              <p class="element"><span class="text-wrapper-8">10+</span></p>
+              <div class="text-wrapper-9">1500+</div>
+              <div class="text-wrapper-10">200+</div>
+              <div class="text-wrapper-11">18+</div>
+              <div class="text-wrapper-12">Lac</div>
+              <div class="text-wrapper-13">Villages</div>
+              <div class="text-wrapper-14">Projects</div>
+              <div class="text-wrapper-15">States</div>
+              <div class="children-and-women">children and<br />women are<br />impacted every year</div>
+              <p class="and-slums-are">and slums<br />are reached out<br />to across the country</p>
+              <div class="focused-on-education">focused on<br />education, healthcare,<br />and women empowerment</div>
+              <div class="text-wrapper-16">are reached including the remotest areas</div>
+            </div>
+            <div class="overlap-group-wrapper">
+              <div class="overlap-group-2"><div id="ourimpactpage"class="text-wrapper-17">Our Impact</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="overlap-wrapper">
+          <div class="overlap-4">
+            <div class="group-2">
+              <div class="overlap-5">
+                <a href="index.html"><img class="screenshot" src="img/screenshot-2023-09-09-183952-1-1.png" /></a>
+                <div class="group-3">
+                  <div class="overlap-group-3"><div class="text-wrapper-18">Search</div></div>
+                  <img class="vector" src="img/vector.svg" />
+                </div>
+                <!-- <div class="component">
+                  <div class="text-wrapper-19">DONATE NOW</div>
+                  <img class="img" src="img/rectangle-1-4.png" />
+                  <div class="text-wrapper-20">DONATE NOW</div>
+                </div> -->
+                <img class="screenshot-2" src="img/screenshot-2023-09-09-183952-1-2.png" />
+              </div>
+            </div>
+            <div class="navbar">
+              <div class="text-wrapper-21"><a href="index.html#ourstoriespage">Our Stories</a></div>
+              <div class="text-wrapper-22"><a href="index.html#aboutuspage">About Us</a></div>
+              <div class="text-wrapper-23"><a href="gallery.html">Gallery</a></div>
+              <div class="text-wrapper-24"><a href="#ourimpactpage">Our Impact</a></div>
+              <div class="text-wrapper-25"><a href="index.html#contactuspage">Contact Us</a></div>
+              <div class="text-wrapper-26"><a href="index.html#ourawardspage">Our Awards</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="group-4">
+          <div class="overlap-6"><div class="text-wrapper-27">Enter Details</div></div>
+        </div>
+        <div class="overlap-7">
+          <div class="group-5">
+            <div class="overlap-8">
+              <div class="rectangle-3"></div>
+              <div class="rectangle-4"></div>
+              <p class="p">Copyright © 2023 Growth For Tomorrow. All rights reserved. Privacy Policy Contact Us</p>
+              <div class="group-6">
+                <div class="flexcontainer">
+                  <p class="text">
+                    <span class="text-wrapper-28">Who We Are<br /></span>
+                  </p>
+                  <p class="text">
+                    <span class="text-wrapper-28"><br /></span>
+                  </p>
+                  <p class="text">
+                    <span class="text-wrapper-29">Our Focus<br /></span>
+                  </p>
+                  <p class="text"><span class="text-wrapper-29">Our Approach</span></p>
+                </div>
+                <div class="flexcontainer-2">
+                  <p class="text">
+                    <span class="text-wrapper-28">Get Involved<br /></span>
+                  </p>
+                  <p class="text">
+                    <span class="text-wrapper-28"><br /></span>
+                  </p>
+                  <p class="text">
+                    <span class="text-wrapper-29">Donate<br /></span>
+                  </p>
+                  <p class="text">
+                    <span class="text-wrapper-29">Volunteer<br /></span>
+                  </p>
+                  <p class="text">
+                    <span class="text-wrapper-29">Partner<br /></span>
+                  </p>
+                  <p class="text">
+                    <span class="text-wrapper-29">Spread the Word<br /></span>
+                  </p>
+                  <p class="text"><span class="text-wrapper-29">Share Your Story</span></p>
+                </div>
+                <div class="flexcontainer-3">
+                  <p class="text">
+                    <span class="text-wrapper-28">Our Impact<br /></span>
+                  </p>
+                  <p class="text">
+                    <span class="text-wrapper-28"><br /></span>
+                  </p>
+                  <p class="text">
+                    <span class="text-wrapper-29">Empowering Women<br /></span>
+                  </p>
+                  <p class="text">
+                    <span class="text-wrapper-29">Nurturing Children<br /></span>
+                  </p>
+                  <p class="text"><span class="text-wrapper-29">Community Impact</span></p>
+                </div>
+                <div class="flexcontainer-4">
+                  <p class="text">
+                    <span class="text-wrapper-28">What We Do<br /></span>
+                  </p>
+                  <p class="text">
+                    <span class="text-wrapper-28"><br /></span>
+                  </p>
+                  <p class="text">
+                    <span class="text-wrapper-29">Health Care Access<br /></span>
+                  </p>
+                  <p class="text">
+                    <span class="text-wrapper-29">Education Empowerment<br /></span>
+                  </p>
+                  <p class="text">
+                    <span class="text-wrapper-29">Economic Empowerment<br /></span>
+                  </p>
+                  <p class="text">
+                    <span class="text-wrapper-29">Women and Child Protection<br /></span>
+                  </p>
+                  <p class="text">
+                    <span class="text-wrapper-29">Community Development<br /></span>
+                  </p>
+                  <p class="text"><span class="text-wrapper-29">How We Make a Difference</span></p>
+                </div>
+                <img class="line" src="img/line-1.svg" />
+                <div class="flexcontainer-5">
+                  <p class="text">
+                    <span class="text-wrapper-28">ABOUT US<br /></span>
+                  </p>
+                  <p class="text">
+                    <span class="text-wrapper-28"><br /></span>
+                  </p>
+                  <p class="text">
+                    <span class="text-wrapper-29">About Growth for Tomorrow<br /></span>
+                  </p>
+                  <p class="text">
+                    <span class="text-wrapper-29">Our Vision<br /></span>
+                  </p>
+                  <p class="text"><span class="text-wrapper-29">Our Mission</span></p>
+                </div>
+              </div>
+              <div class="group-7">
+                <div class="flexcontainer-6">
+                  <p class="span-wrapper">
+                    <span class="text-wrapper-30">Growth For Tomorrow<br /></span>
+                  </p>
+                  <p class="span-wrapper">
+                    <span class="text-wrapper-29"
+                      >No 36 3rd Cross, MR Layout, Chinnagenahalli, Bandapura, Bengaluru, <br
+                    /></span>
+                  </p>
+                  <p class="span-wrapper">
+                    <span class="text-wrapper-29">Karnataka - 560049<br /></span>
+                  </p>
+                  <p class="span-wrapper">
+                    <span class="text-wrapper-29"><br /></span>
+                  </p>
+                  <p class="span-wrapper">
+                    <span class="text-wrapper-29"
+                      >Contact Us: Tel: 974158623| E-mail: growthfortomorrow.wc@gmail.com</span
+                    >
+                  </p>
+                </div>
+                <img class="line-2" src="img/line-2.svg" />
+              </div>
+              <div class="group-8">
+                <div class="text-wrapper-31">Subscribe to Our Newsletter</div>
+                <div class="group-9">
+                  <div class="overlap-9"><div class="text-wrapper-32">Enter Your Email</div></div>
+                  <div class="div-2">
+                    <div class="div-2">
+                      <div class="overlap-group-4"><div class="text-wrapper-33">Name</div></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="group-10">
+                  <div class="subscribe-wrapper">
+                    <p class="subscribe">
+                      <span class="text-wrapper-34">Subscribe</span> <span class="text-wrapper-29">&nbsp;</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="group-11">
+            <img class="image" src="img/image-41.png" />
+            <img class="image-2" src="img/image-42.png" />
+            <img class="image-3" src="img/image-43.png" />
+            <img class="image-4" src="img/image-44.png" />
+            <img class="image-5" src="img/image-45.png" />
+            <img class="image-6" src="img/image-47.png" />
+          </div>
+        </div>
+        <div class="overlap-10">
+          <div class="rectangle-5"></div>
+          <p class="donate-now">
+            <button id="donate-btn" onclick="donatefunc()" style="background-color:#206DEB;height:60px;width:300px;position:absolute;bottom:450px;right: 10px;"><b>Donate</b></button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

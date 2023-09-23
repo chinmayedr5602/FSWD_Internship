@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+        // Initialize Razorpay with your API key
+        var options = {
+            key: 'rzp_test_hXFPHjdehKVMSg',
+            amount: 10000, // Amount in paise (100 paise = 1 INR)
+            currency: 'INR',
+            name: 'GROWTH FOR TOMORROW',
+            description: 'Payment for Nurturing Today, Empowering Tomorrow',
+            image: "https://imgtr.ee/images/2023/09/17/d4e8082853eccb3b4a83ab638946b635.png", // URL of your logo
+            handler: function (response) {
+                // This function will be called when the payment is successful
+                alert('Payment successful. Payment ID: ' + response.razorpay_payment_id);
+                // You can perform additional actions here, such as updating your database
+            },
+            prefill: {
+                name: 'John Doe', // Customer's name
+                email: 'john@example.com', // Customer's email
+                contact: '1234567890' // Customer's phone number
+            }
+        };
+        function donatefun() {
+            var rzp = new Razorpay(options);
+            rzp.open();
+        };
+        // Create a Razorpay payment button
+        // var rzpButton = document.getElementById('donate-btn');
+        // rzpButton.onclick = function donatefun() {
+        //   var rzp = new Razorpay(options);
+        //   rzp.open();
+        // };
+    </script>
+</head>
+
+<body>
+    <div class="frame">
+        <div class="div">
+            <div class="overlap-wrapper">
+                <div class="overlap">
+                    <div class="group">
+                        <div class="overlap-group">
+                            <a href="index.html"><img class="screenshot" src="img/screenshot-2023-09-09-183952-1-1.png" /></a>
+                            <div class="group-2">
+                                <div class="div-wrapper">
+                                    <div class="text-wrapper">Search</div>
+                                </div>
+                                <img class="vector" src="img/vector.svg" />
+                            </div>
+                            <!-- <div class="component">
+                                <div class="text-wrapper-36"><button id="donate-btn" onclick="donatefun()"><b>DONATE</b></button></div>
+                                <img class="rectangle-10" src="img/rectangle-1.png" />
+                            </div> -->
+                            <img class="img" src="img/screenshot-2023-09-09-183952-1-2.png" />
+                        </div>
+                    </div>
+                    <div class="navbar">
+                        <div class="text-wrapper-4"><a href="index.html#ourstoriespage">Our Stories</a></div>
+                        <div class="text-wrapper-5"><a href="index.html#aboutuspage">About Us</a></div>
+                        <div class="text-wrapper-6"><a href="gallery.html">Gallery</a></div>
+                        <div class="text-wrapper-7"><a href="indeximpact.html#ourimpactpage">Our Impact</a></div>
+                        <div class="text-wrapper-8"><a href="index.html#contactuspage">Contact Us</a></div>
+                        <div class="text-wrapper-9"><a href="index.html#ourawardspage">Our Awards</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="overlap-group-wrapper">
+                <div class="overlap-2">
+                    <div class="text-wrapper-10">Our Gallery</div>
+                </div>
+            </div>
+            <div class="overlap-3">
+                <div class="overlap-4">
+                    <img class="image" src="img/image-24.png" />
+                    <div class="overlap-5">
+                        <img class="image-2" src="img/image-28.png" /> <img class="image-3" src="img/image-33.png" />
+                    </div>
+                </div>
+                <img class="image-4" src="img/image-42-1.png" />
+            </div>
+            <div class="overlap-6">
+                <div class="group-3">
+                    <div class="overlap-7">
+                        <div class="rectangle-2"></div>
+                        <div class="rectangle-3"></div>
+                        <div class="group-4">
+                            <div class="flexcontainer">
+                                <p class="text">
+                                    <span class="span">Who We Are<br /></span>
+                                </p>
+
+                                <p class="text">
+                                    <span class="text-wrapper-11">Our Focus<br /></span>
+                                </p>
+                                <p class="text"><span class="text-wrapper-11">Our Apporach</span></p>
+                            </div>
+                            <div class="flexcontainer-2">
+                                <p class="text">
+                                    <span class="span">Get Involved<br /></span>
+                                </p>
+
+                                <p class="text">
+                                    <span class="text-wrapper-11">Donate<br /></span>
+                                </p>
+                                <p class="text">
+                                    <span class="text-wrapper-11">Volunteer<br /></span>
+                                </p>
+                                <p class="text">
+                                    <span class="text-wrapper-11">Partner<br /></span>
+                                </p>
+                                <p class="text">
+                                    <span class="text-wrapper-11">Spread the Word<br /></span>
+                                </p>
+                                <p class="text"><span class="text-wrapper-11">Share Your Story</span></p>
+                            </div>
+                            <div class="flexcontainer-3">
+                                <p class="text">
+                                    <span class="span">Our Impact<br /></span>
+                                </p>
+
+                                <p class="text">
+                                    <span class="text-wrapper-11">Empowering Women<br /></span>
+                                </p>
+                                <p class="text">
+                                    <span class="text-wrapper-11">Nurturing Children<br /></span>
+                                </p>
+                                <p class="text"><span class="text-wrapper-11">Community Impact</span></p>
+                            </div>
+                            <div class="flexcontainer-4">
+                                <p class="text">
+                                    <span class="span">What We Do<br /></span>
+                                </p>
+
+                                <p class="text">
+                                    <span class="text-wrapper-11">Health Care Access<br /></span>
+                                </p>
+                                <p class="text">
+                                    <span class="text-wrapper-11">Education Empowerment<br /></span>
+                                </p>
+                                <p class="text">
+                                    <span class="text-wrapper-11">Economic Empowerment<br /></span>
+                                </p>
+                                <p class="text">
+                                    <span class="text-wrapper-11">Women and Child Protection<br /></span>
+                                </p>
+                                <p class="text">
+                                    <span class="text-wrapper-11">Community Development<br /></span>
+                                </p>
+                                <p class="text"><span class="text-wrapper-11">How We Make a Difference</span></p>
+                            </div>
+                            <img class="line" src="img/line-1.svg" />
+                            <div class="flexcontainer-5">
+                                <p class="text">
+                                    <span class="span">ABOUT US<br /></span>
+                                </p>
+
+                                <p class="text">
+                                    <span class="text-wrapper-11">About Growth for Tomorrow<br /></span>
+                                </p>
+                                <p class="text">
+                                    <span class="text-wrapper-11">Our Vision<br /></span>
+                                </p>
+                                <p class="text"><span class="text-wrapper-11">Our Mission</span></p>
+                            </div>
+                        </div>
+                        <div class="group-5">
+                            <div class="flexcontainer-6">
+                                <p class="span-wrapper">
+                                    <span class="text-wrapper-12">Growth For Tomorrow<br /></span>
+                                </p>
+                                <p class="span-wrapper">
+                                    <span class="text-wrapper-11">No 36 3rd Cross, MR Layout, Chinnagenahalli,
+                                        Bandapura, Bengaluru, <br /></span>
+                                </p>
+                                <p class="span-wrapper">
+                                    <span class="text-wrapper-11">Karnataka - 560049<br /></span>
+                                </p>
+
+                                <p class="span-wrapper">
+                                    <span class="text-wrapper-11">Contact Us: Tel: 974158623| E-mail:
+                                        growthfortomorrow.wc@gmail.com</span>
+                                </p>
+                            </div>
+                            <img class="line-2" src="img/line-2.svg" />
+                        </div>
+                        <div class="group-6">
+                            <div class="text-wrapper-13">Subscribe to Our Newsletter</div>
+                            <div class="overlap-8">
+                                <div class="text-wrapper-14">Enter Your Email</div>
+                            </div>
+                            <div class="overlap-9">
+                                <div class="text-wrapper-15">Name</div>
+                            </div>
+                            <div class="group-7">
+                                <div class="subscribe-wrapper">
+                                    <p class="subscribe">
+                                        <span class="text-wrapper-16">Subscribe</span> <span
+                                            class="text-wrapper-11">&nbsp;</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="p">Copyright © 2023 Growth For Tomorrow. All rights reserved. Privacy
+                            Policy Contact Us</p>
+                    </div>
+                </div>
+                <img class="image-5" src="img/image-51.png" />
+                <div class="group-8">
+                    <img class="image-6" src="img/image-41.png" />
+                    <img class="image-7" src="img/image-42.png" />
+                    <img class="image-8" src="img/image-43.png" />
+                    <img class="image-9" src="img/image-44.png" />
+                    <img class="image-10" src="img/image-45.png" />
+                    <img class="image-11" src="img/image-47.png" />
+                </div>
+            </div>
+            <img class="image-12" src="img/image-43-1.png" />
+            <img class="image-13" src="img/image-47-1.png" />
+            <img class="image-14" src="img/image-48.png" />
+            <img class="image-15" src="img/image-49.png" />
+            <img class="image-16" src="img/image-50.png" />
+            <img class="image-17" src="img/image-53.png" />
+            <img class="image-18" src="img/image-52.png" />
+        </div>
+    </div>
+</body>
+
+</html>
